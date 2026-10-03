@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>معمل فيزياء 2 الافتراضي | أ. آمال الفارسي</title>
+<style>
+:root{--bg:#071522;--card:#10283d;--card2:#15344e;--line:#2b506c;--a:#62ddca;--gold:#f4cb62;--txt:#f7fbff;--mut:#afc2d0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0,#1b4864 0,#071522 42%,#030a12 100%);color:var(--txt);font-family:Tahoma,Arial,sans-serif}
+header{padding:32px 5% 45px}.wrap{width:min(1180px,92%);margin:auto}.tag{display:inline-block;padding:8px 14px;border:1px solid #416a83;border-radius:30px;color:var(--a)}
+h1{font-size:clamp(32px,6vw,62px);margin:17px 0 8px}.lead{max-width:850px;color:var(--mut);font-size:18px;line-height:1.9}
+nav{position:sticky;top:0;z-index:5;background:#071522ee;border-bottom:1px solid var(--line);backdrop-filter:blur(10px);padding:12px 4%;display:flex;gap:8px;overflow:auto}
+nav a{white-space:nowrap;color:#d9e8f2;text-decoration:none;padding:9px 13px;border-radius:12px;background:#10283d}
+h2{font-size:29px;margin:38px 0 18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}.card{background:linear-gradient(145deg,var(--card),#0b2032);border:1px solid var(--line);border-radius:22px;padding:21px;box-shadow:0 12px 30px #0004}.icon{font-size:42px}.card p{color:var(--mut);line-height:1.8}.unit{min-height:250px;display:flex;flex-direction:column}.unit button{margin-top:auto}
+button{border:0;border-radius:13px;padding:12px 17px;background:var(--a);color:#06221d;font-weight:bold;cursor:pointer}.gold{background:var(--gold);color:#251d07}.dark{background:#203d58;color:white}
+.lab{display:grid;grid-template-columns:1.05fr .95fr;gap:16px}.stage{min-height:310px;position:relative;overflow:hidden;background:linear-gradient(#123957,#092235)}
+.floor{position:absolute;left:7%;right:7%;bottom:40px;height:10px;background:#4e7185;border-radius:8px}.object{position:absolute;bottom:50px;right:18%;width:78px;height:58px;background:var(--gold);border-radius:10px;color:#392b08;display:grid;place-items:center;transition:.5s}.arrow{position:absolute;bottom:67px;right:31%;font-size:42px;color:var(--a);transition:.5s}
+label{display:block;margin:14px 0 6px;font-weight:bold}input[type=range]{width:100%;accent-color:var(--a)}.v{color:var(--a);font-size:22px}.formula{margin-top:15px;padding:15px;background:#071725;border-radius:14px;text-align:center;font-size:19px}
+.orbit{height:310px;position:relative}.ring{position:absolute;width:230px;height:230px;border:2px dashed #52758b;border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}.planet{position:absolute;width:52px;height:52px;border-radius:50%;background:var(--a);left:50%;top:50%;transform:translate(-50%,-50%)}.sat{position:absolute;width:28px;height:28px;border-radius:50%;background:var(--gold);left:calc(50% + 85px);top:calc(50% - 14px);transform-origin:-85px 14px;animation:spin 5s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.wheel{height:310px;position:relative}.wheelshape{position:absolute;width:170px;height:170px;border:14px solid var(--gold);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}.hub{position:absolute;width:30px;height:30px;background:var(--a);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
+.collide{height:310px;position:relative}.car{position:absolute;bottom:55px;width:72px;height:48px;border-radius:9px;display:grid;place-items:center;transition:.8s}.c1{background:var(--a);right:22%}.c2{background:var(--gold);right:55%}
+.heat{height:310px;position:relative;border-radius:18px;background:#102d40;overflow:hidden}.p{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--gold);animation:move 1.4s infinite alternate ease-in-out}@keyframes move{to{transform:translate(35px,-25px)}}
+.badge{display:inline-block;padding:8px 12px;border-radius:20px;background:#153d50;color:var(--a);margin:3px}.result{display:none;padding:14px;background:#123b39;border-radius:13px;color:#c6fff4;margin-top:10px}.answer{display:block;width:100%;text-align:right;margin:7px 0;background:#193954;color:#fff}
+footer{text-align:center;color:#8198aa;padding:45px}
+@media(max-width:760px){.lab{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<span class="tag">فيزياء 2 • ثاني ثانوي • مسارات</span>
+<h1>🧪 معمل فيزياء 2 الافتراضي</h1>
+<p class="lead">بيئة تعليمية تفاعلية تجمع بين المحاكاة، الملاحظة، الحساب، التحديات والشرح الصوتي. إعداد أ/ آمال الفارسي.</p>
+</div></header>
+
+<nav>
+<a href="#home">الرئيسية</a><a href="#gravity">الجاذبية</a><a href="#rotation">الدورانية</a><a href="#momentum">الزخم</a><a href="#work">الشغل والطاقة</a><a href="#thermal">الحرارية</a><a href="#final">التحدي</a>
+</nav>
+
+<main class="wrap" id="home">
+<h2>🗺️ خريطة المعمل</h2>
+<div class="grid">
+<div class="card unit"><div class="icon">🌌</div><h3>1. الجاذبية</h3><p>الوزن، مجال الجاذبية، الحركة المدارية وقوانين كبلر.</p><button onclick="go('gravity')">ابدئي</button></div>
+<div class="card unit"><div class="icon">🔄</div><h3>2. الحركة الدورانية</h3><p>الإزاحة والسرعة والتسارع الزاوي والعزم.</p><button onclick="go('rotation')">ابدئي</button></div>
+<div class="card unit"><div class="icon">💥</div><h3>3. الزخم وحفظه</h3><p>الزخم، الدفع، التصادمات وحفظ الزخم.</p><button onclick="go('momentum')">ابدئي</button></div>
+<div class="card unit"><div class="icon">⚙️</div><h3>4. الشغل والطاقة</h3><p>الشغل، الطاقة الحركية والوضع، القدرة والآلات البسيطة.</p><button onclick="go('work')">ابدئي</button></div>
+<div class="card unit"><div class="icon">🌡️</div><h3>5. الطاقة الحرارية</h3><p>الحرارة النوعية، تغيرات الحالة وانتقال الطاقة.</p><button onclick="go('thermal')">ابدئي</button></div>
+<div class="card unit"><div class="icon">🏆</div><h3>المهمة الختامية</h3><p>اختبار قصير يجمع مفاهيم الوحدات.</p><button class="gold" onclick="go('final')">التحدي</button></div>
+</div>
+
+<section id="gravity"><h2>🌌 مختبر الجاذبية</h2><div class="lab"><div class="card stage orbit"><div class="ring"></div><div class="planet"></div><div class="sat"></div></div><div class="card">
+<h3>الوزن = الكتلة × شدة الجاذبية</h3><label>الكتلة: <span class="v" id="gmv">50</span> kg</label><input id="gm" type="range" min="1" max="100" value="50"><label>g: <span class="v" id="ggv">9.8</span> m/s²</label><input id="gg" type="range" min="1" max="25" step=".1" value="9.8"><div class="formula"><b id="gw">490 N</b></div><p>غيّري المتغيرات ولاحظي أثرها في الوزن.</p><button onclick="done('gravity')">✓ إتمام المحطة</button></div></div></section>
+
+<section id="rotation"><h2>🔄 مختبر الحركة الدورانية</h2><div class="lab"><div class="card stage wheel"><div class="wheelshape" id="ws"><div class="hub"></div></div></div><div class="card">
+<h3>التردد والسرعة الزاوية</h3><label>f: <span class="v" id="rfv">2</span> Hz</label><input id="rf" type="range" min="0" max="10" step=".1" value="2"><div class="formula">ω = 2πf<br><b id="rw">12.57 rad/s</b></div><p>كلما زاد التردد زادت السرعة الزاوية.</p><button onclick="done('rotation')">✓ إتمام المحطة</button></div></div></section>
+
+<section id="momentum"><h2>💥 مختبر الزخم</h2><div class="lab"><div class="card stage collide"><div class="car c1">2 kg</div><div class="car c2">1 kg</div></div><div class="card">
+<h3>p = mv</h3><label>سرعة الجسم: <span class="v" id="mvv">4</span> m/s</label><input id="mvr" type="range" min="0" max="10" value="4"><div class="formula">الزخم = <b id="mp">8 kg·m/s</b></div><p>اكتشفي كيف يؤثر تغير السرعة في الزخم.</p><button onclick="done('momentum')">✓ إتمام المحطة</button></div></div></section>
+
+<section id="work"><h2>⚙️ مختبر الشغل والطاقة والآلات</h2><div class="lab"><div class="card stage"><div class="object" id="obj">جسم</div><div class="arrow" id="arr">←</div><div class="floor"></div></div><div class="card">
+<h3>الشغل</h3><label>F: <span class="v" id="wf">20</span> N</label><input id="wfr" type="range" min="0" max="100" value="20"><label>d: <span class="v" id="wd">3</span> m</label><input id="wdr" type="range" min="0" max="10" step=".5" value="3"><div class="formula">W = Fd<br><b id="wv">60 J</b></div><p>هذه المحاكاة تمهّد لاحقًا لإضافة نماذج 3D حقيقية للآلات البسيطة.</p><button onclick="done('work')">✓ إتمام المحطة</button></div></div></section>
+
+<section id="thermal"><h2>🌡️ مختبر الطاقة الحرارية</h2><div class="lab"><div class="card heat" id="heat"></div><div class="card">
+<h3>Q = mcΔT</h3><label>الكتلة: <span class="v" id="tm">2</span> kg</label><input id="tmr" type="range" min="1" max="10" value="2"><label>ΔT: <span class="v" id="td">10</span> °C</label><input id="tdr" type="range" min="1" max="50" value="10"><div class="formula">للماء: c ≈ 4200 J/kg·°C<br><b id="qv">84000 J</b></div><button onclick="done('thermal')">✓ إتمام المحطة</button></div></div></section>
+
+<section id="final"><h2>🏆 التحدي الختامي</h2><div class="card"><h3>إذا أثرت قوة 30 N في جسم وحركته 4 m في اتجاه القوة، فما الشغل؟</h3><button class="answer" onclick="answer(this,true)">120 J</button><button class="answer" onclick="answer(this,false)">34 J</button><button class="answer" onclick="answer(this,false)">7.5 J</button><div class="result"></div></div></section>
+</main>
+<footer>معمل فيزياء 2 الافتراضي<br>إعداد أ/ آمال الفارسي</footer>
+
+<script>
+const $=id=>document.getElementById(id),doneSet=new Set();
+function go(id){$(id).scrollIntoView({behavior:'smooth'})}
+function done(id){doneSet.add(id);if(doneSet.size===5)alert('🎉 أتممتِ جميع محطات المعمل!')}
+function gravity(){let m=+$('gm').value,g=+$('gg').value;$('gmv').textContent=m;$('ggv').textContent=g.toFixed(1);$('gw').textContent=(m*g).toFixed(1)+' N'}$('gm').oninput=$('gg').oninput=gravity;gravity();
+function rotation(){let f=+$('rf').value;$('rfv').textContent=f.toFixed(1);$('rw').textContent=(2*Math.PI*f).toFixed(2)+' rad/s'}$('rf').oninput=rotation;rotation();
+function momentum(){let v=+$('mvr').value;$('mvv').textContent=v;$('mp').textContent=(2*v).toFixed(1)+' kg·m/s'}$('mvr').oninput=momentum;momentum();
+function work(){let f=+$('wfr').value,d=+$('wdr').value;$('wf').textContent=f;$('wd').textContent=d;$('wv').textContent=(f*d).toFixed(1)+' J';$('obj').style.transform='translateX('+(-d*15)+'px)';$('arr').style.transform='translateX('+(-d*15)+'px)'}$('wfr').oninput=$('wdr').oninput=work;work();
+function thermal(){let m=+$('tmr').value,d=+$('tdr').value;$('tm').textContent=m;$('td').textContent=d;$('qv').textContent=(m*4200*d).toFixed(0)+' J'}$('tmr').oninput=$('tdr').oninput=thermal;thermal();
+function answer(b,ok){let r=b.parentElement.querySelector('.result');r.style.display='block';r.textContent=ok?'🎉 إجابة صحيحة!':'💡 حاولي مرة أخرى.'}
+</script>
+</body></html>
